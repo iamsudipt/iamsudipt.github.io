@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudipt Sharma - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 3D Background Canvas -->
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">Sudipt Sharma</div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#journey" class="nav-link">Journey</a>
+            <a href="#interests" class="nav-link">Interests</a>
+            <a href="#blog" class="nav-link">Blog</a>
+            <a href="#mentorship" class="nav-link">Mentorship</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-photo-container">
+                <div class="profile-photo-ring"></div>
+                <div class="profile-photo-ring ring-2"></div>
+                <img src="sudipt_devops.jpg" alt="Sudipt Sharma" class="profile-photo" id="profilePhoto">
+            </div>
+            <h1 class="hero-title">
+                <span class="glitch" data-text="Sudipt Sharma">Sudipt Sharma</span>
+            </h1>
+            <p class="hero-subtitle">DevOps | Cloud | SRE</p>
+            <div class="hero-cta">
+                <a href="#skills" class="btn btn-primary">Explore My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Man Page About Section -->
+    <section id="about" class="section manpage-section">
+        <div class="container">
+            <div class="manpage-container">
+                <div class="manpage-header">
+                    <span class="manpage-header-left">SUDIPT(1)</span>
+                    <span class="manpage-header-center">User Commands</span>
+                    <span class="manpage-header-right">SUDIPT(1)</span>
+                </div>
+
+                <div class="manpage-content">
+                    <div class="manpage-section">
+                        <h3 class="manpage-title">NAME</h3>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">sudipt</span> - DevOps Engineer, Cloud Architect, and Site Reliability Engineer
+                        </p>
+                    </div>
+
+                    <div class="manpage-section">
+                        <h3 class="manpage-title">SYNOPSIS</h3>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">sudipt</span> [--mode=<span class="manpage-underline">devops</span>|<span class="manpage-underline">cloud</span>|<span class="manpage-underline">sre</span>] [--focus=<span class="manpage-underline">automation</span>] [--scale=<span class="manpage-underline">enterprise</span>]
+                        </p>
+                    </div>
+
+                    <div class="manpage-section">
+                        <h3 class="manpage-title">DESCRIPTION</h3>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">sudipt</span> is a highly scalable DevOps engineer specializing in cloud infrastructure,
+                            containerization, and building resilient distributed systems. Experienced in automating complex
+                            workflows, optimizing CI/CD pipelines, and ensuring high availability across production environments.
+                        </p>
+                        <p class="manpage-text">
+                            With expertise spanning multiple cloud providers and orchestration platforms, sudipt delivers
+                            infrastructure-as-code solutions that are maintainable, secure, and cost-effective. Known for
+                            implementing monitoring solutions that provide deep insights into system performance and reliability.
+                        </p>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">Performance Characteristics:</span> Sudipt is most productive when invoked in morning hours.
+                            He is task focused and likes to manage priorities. He is most effective when information on priority
+                            and ETA's are provided. He is detail oriented and likes to get involved in detail explanations.
+                        </p>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">Core Values:</span> Sudipt values curiosity, integrity, professionalism, team work and
+                            quality when working. Do maintain open and constant communication for improved interaction.
+                        </p>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">Communication Protocol:</span> When requesting information, Sudipt requires time to
+                            research, review and evaluate to provide an answer. Further feedback is encouraged and Sudipt is
+                            open for discussion.
+                        </p>
+                    </div>
+
+                    <div class="manpage-section">
+                        <h3 class="manpage-title">OPTIONS</h3>
+                        <div class="manpage-text">
+                            <p><span class="manpage-bold">--cloud-provider</span>=<span class="manpage-underline">aws</span>|<span class="manpage-underline">azure</span>|<span class="manpage-underline">gcp</span></p>
+                            <p class="manpage-indent">Deploy and manage infrastructure across major cloud platforms</p>
+
+                            <p><span class="manpage-bold">--container-orchestration</span>=<span class="manpage-underline">kubernetes</span>|<span class="manpage-underline">docker</span></p>
+                            <p class="manpage-indent">Orchestrate containerized applications at scale</p>
+
+                            <p><span class="manpage-bold">--iac</span>=<span class="manpage-underline">terraform</span>|<span class="manpage-underline">ansible</span>|<span class="manpage-underline">cloudformation</span></p>
+                            <p class="manpage-indent">Infrastructure as Code implementation and management</p>
+
+                            <p><span class="manpage-bold">--monitoring</span>=<span class="manpage-underline">prometheus</span>|<span class="manpage-underline">grafana</span>|<span class="manpage-underline">datadog</span></p>
+                            <p class="manpage-indent">Comprehensive observability and alerting systems</p>
+
+                            <p><span class="manpage-bold">--cicd</span>=<span class="manpage-underline">jenkins</span>|<span class="manpage-underline">gitlab-ci</span>|<span class="manpage-underline">github-actions</span></p>
+                            <p class="manpage-indent">Automated build, test, and deployment pipelines</p>
+                        </div>
+                    </div>
+
+                    <div class="manpage-section">
+                        <h3 class="manpage-title">ENVIRONMENT</h3>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">CLOUD</span><br>
+                            <span class="manpage-indent">AWS, Azure, Google Cloud Platform</span>
+                        </p>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">LANGUAGES</span><br>
+                            <span class="manpage-indent">Python, Bash, Go, YAML, HCL</span>
+                        </p>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">SPECIALIZATION</span><br>
+                            <span class="manpage-indent">Kubernetes, Docker, Terraform, Jenkins, Git, Linux</span>
+                        </p>
+                    </div>
+
+                    <div class="manpage-section">
+                        <h3 class="manpage-title">EXAMPLES</h3>
+                        <p class="manpage-text">
+                            <span class="manpage-command">$ sudipt --deploy --env=production --scale=auto</span><br>
+                            <span class="manpage-indent">Deploy application to production with auto-scaling enabled</span>
+                        </p>
+                        <p class="manpage-text">
+                            <span class="manpage-command">$ sudipt --optimize --resource=infrastructure --cost-reduction</span><br>
+                            <span class="manpage-indent">Optimize infrastructure for cost efficiency</span>
+                        </p>
+                        <p class="manpage-text">
+                            <span class="manpage-command">$ sudipt --monitor --alert=critical --response=immediate</span><br>
+                            <span class="manpage-indent">Setup monitoring with critical alerting and incident response</span>
+                        </p>
+                    </div>
+
+                    <div class="manpage-section">
+                        <h3 class="manpage-title">EXIT STATUS</h3>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">0</span> - Successfully delivered scalable infrastructure<br>
+                            <span class="manpage-bold">1</span> - Learning new technology (temporary state)<br>
+                            <span class="manpage-bold">2</span> - Coffee required, rerun with --caffeine flag
+                        </p>
+                    </div>
+
+                    <div class="manpage-section">
+                        <h3 class="manpage-title">NOTES</h3>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">Adventure & Exploration</span><br>
+                            <span class="manpage-indent">Sudipt enjoys cycling and outdoor activities extensively. Road trips and
+                            travelling have become a significant passion in recent years.</span>
+                        </p>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">Road Trip Stats</span><br>
+                            <span class="manpage-indent">Distance covered: 70,000+ km over the last three years<br>
+                            Regions explored: North and West India<br>
+                            Most memorable drive: Jaisalmer Fort to border area</span>
+                        </p>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">Culinary Preferences</span><br>
+                            <span class="manpage-indent">Favorite dessert: Gulab Jamun with vanilla ice cream<br>
+                            Status: Considered one of the best things in the world (subjective but firmly believed)</span>
+                        </p>
+                        <p class="manpage-text">
+                            <span class="manpage-bold">Future Ventures (Roadmap)</span><br>
+                            <span class="manpage-indent">• Visit Mt Kailash (spiritual expedition)<br>
+                            • Drive through Swiss Alps (scenic route optimization)<br>
+                            • Trek to Mount Annapurna (high-altitude adventure)<br>
+                            Note: Execution pending optimal time allocation</span>
+                        </p>
+                    </div>
+
+                    <div class="manpage-section">
+                        <h3 class="manpage-title">SEE ALSO</h3>
+                        <p class="manpage-text">
+                            <span class="manpage-link">github(1)</span>,
+                            <span class="manpage-link">linkedin(1)</span>,
+                            <span class="manpage-link">blog(1)</span>,
+                            <span class="manpage-link">kubernetes(8)</span>,
+                            <span class="manpage-link">docker(1)</span>
+                        </p>
+                    </div>
+
+                    <div class="manpage-section">
+                        <h3 class="manpage-title">BUGS</h3>
+                        <p class="manpage-text">
+                            Sudipt tends to be overly self-critical, which can undermine his confidence.
+                        </p>
+                        <p class="manpage-text">
+                            This is a known issue and is being actively worked on. Workaround: positive reinforcement
+                            and celebrating small wins have shown promising results.
+                        </p>
+                    </div>
+
+                    <div class="manpage-section">
+                        <h3 class="manpage-title">AUTHOR</h3>
+                        <p class="manpage-text">
+                            Written by Sudipt Sharma. Bug reports and feature requests welcome.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="manpage-footer">
+                    <span class="manpage-footer-left">DevOps 2.0</span>
+                    <span class="manpage-footer-center">2026</span>
+                    <span class="manpage-footer-right">SUDIPT(1)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with 3D Visualization -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills Universe</h2>
+            <p class="section-subtitle">Interactive skill constellation - click to explore</p>
+            <div class="skills-container">
+                <canvas id="skillsCanvas"></canvas>
+                <div class="skills-legend">
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #00ff88"></span>
+                        <span>Cloud & Infra</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #0088ff"></span>
+                        <span>Observability</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #ff0088"></span>
+                        <span>CI/CD</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #ffaa00"></span>
+                        <span>Automation</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: #ff00ff"></span>
+                        <span>SRE Practices</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Journey Timeline -->
+    <section id="journey" class="section journey-section">
+        <div class="container">
+            <h2 class="section-title">Professional Journey</h2>
+            <p class="section-subtitle">My path through technology and innovation</p>
+            <div class="timeline">
+                <!-- Timeline items will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="section interests-section">
+        <div class="container">
+            <h2 class="section-title">Hobbies & Interests</h2>
+            <p class="section-subtitle">What drives me beyond the screen</p>
+            <div class="interests-grid">
+                <!-- Interest cards will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section blog-section">
+        <div class="container">
+            <h2 class="section-title">Latest from the Blog</h2>
+            <p class="section-subtitle">Thoughts, tutorials, and insights on Medium</p>
+            <div class="blog-grid">
+                <!-- Blog posts will be dynamically generated -->
+            </div>
+            <div class="blog-cta">
+                <a href="https://medium.com/@su_dipt" target="_blank" class="btn btn-primary">
+                    View All Posts on Medium
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-left: 8px;">
+                        <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentorship Section -->
+    <section id="mentorship" class="section mentorship-section">
+        <div class="container">
+            <h2 class="section-title">1:1 Mentorship & Consultation</h2>
+            <p class="section-subtitle">Book a session with me to discuss DevOps, SRE, Cloud Architecture, or Career Growth</p>
+
+            <div class="mentorship-container">
+                <div class="mentorship-content">
+                    <div class="mentorship-features">
+                        <div class="mentorship-feature">
+                            <div class="feature-icon">🎯</div>
+                            <h3>Career Guidance</h3>
+                            <p>Navigate your DevOps/SRE career path with personalized advice from 10+ years of experience</p>
+                        </div>
+                        <div class="mentorship-feature">
+                            <div class="feature-icon">☁️</div>
+                            <h3>Cloud Architecture</h3>
+                            <p>Design scalable, cost-effective cloud infrastructure on AWS, Kubernetes, and more</p>
+                        </div>
+                        <div class="mentorship-feature">
+                            <div class="feature-icon">🔍</div>
+                            <h3>Observability Strategy</h3>
+                            <p>Implement enterprise-grade observability with OpenTelemetry, Datadog, and monitoring best practices</p>
+                        </div>
+                        <div class="mentorship-feature">
+                            <div class="feature-icon">⚡</div>
+                            <h3>CI/CD & GitOps</h3>
+                            <p>Build automated deployment pipelines and adopt GitOps workflows for your team</p>
+                        </div>
+                        <div class="mentorship-feature">
+                            <div class="feature-icon">💰</div>
+                            <h3>Cost Optimization</h3>
+                            <p>Learn strategies to save millions in cloud costs while maintaining reliability</p>
+                        </div>
+                        <div class="mentorship-feature">
+                            <div class="feature-icon">🚨</div>
+                            <h3>Incident Management</h3>
+                            <p>Master SRE practices for incident response, post-mortems, and reducing MTTR</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mentorship-cta-card">
+                    <div class="topmate-badge">
+                        <span class="badge-icon">⭐</span>
+                        <span>Available on Topmate</span>
+                    </div>
+                    <h3>Ready to Level Up?</h3>
+                    <p>Book a 1:1 session and get personalized guidance on your DevOps/SRE journey</p>
+                    <ul class="mentorship-perks">
+                        <li>✓ Personalized advice for your situation</li>
+                        <li>✓ Real-world insights from enterprise experience</li>
+                        <li>✓ Actionable strategies you can implement</li>
+                        <li>✓ Follow-up support via email</li>
+                    </ul>
+                    <a href="https://topmate.io/su_dipt" target="_blank" class="btn btn-primary btn-large">
+                        Book a Session on Topmate
+                        <span class="btn-arrow">→</span>
+                    </a>
+                    <p class="mentorship-note">Limited slots available each month</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in touch</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/iamsudipt" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sudipt-sharma/" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://x.com/su_dipt" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="https://medium.com/@su_dipt" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+                        </a>
+                        <a href="https://topmate.io/su_dipt" target="_blank" class="social-link" title="Book 1:1 Session">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z"/></svg>
+                        </a>
+                        <a href="mailto:sudipt.devops@gmail.com" class="social-link" title="Email Me">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Sudipt Sharma. Built with passion and code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
