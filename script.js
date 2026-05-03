@@ -48,6 +48,12 @@ const CONFIG = {
 
     journey: [
         {
+            date: 'May 2026 - Present',
+            title: 'SDE III',
+            company: 'Expedia Group, Gurugram',
+            description: 'Driving Continuous Integration (CI) platform initiatives to deliver scalable solutions across Expedia.'
+        },
+        {
             date: 'September 2022 - Present',
             title: 'Infrastructure & Enterprise Engineer III',
             company: 'Expedia Group, Gurugram',
