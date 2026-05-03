@@ -57,7 +57,7 @@ const CONFIG = {
             date: 'September 2022 - Present',
             title: 'Infrastructure & Enterprise Engineer III',
             company: 'Expedia Group, Gurugram',
-            description: 'Architected enterprise observability platform (APM, logs, tracing) using OpenTelemetry + Datadog. Led migration from legacy logging delivering $1.6M annual savings. Designed log-tiering strategy saving $2.5–3M annually. Developed GenAI-powered RCA automation and Slack-based operational tooling. Impact: Reduced MTTR, improved system visibility, saved $4M+ annually.'
+            description: 'Lead Observability Initiatives<br>• Integrated OpenTelemetry into existing observability stack for enhanced telemetry collection.<br>• Developed in-house metrics and tracing tools to customize monitoring capabilities.<br>• Maintained legacy observability platform while ensuring system stability.<br>• Migrated legacy workloads to modern infrastructure, improving scalability and performance.<br>• Led Datadog adoption to streamline logging, metrics, and alerting.'
         },
         {
             date: 'April 2021 - September 2022',
