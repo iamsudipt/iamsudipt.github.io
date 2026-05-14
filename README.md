@@ -1,4 +1,4 @@
-# Sudsharma's Personal Portfolio
+# Sudipt Sharma's Personal Portfolio
 
 A modern, interactive personal landing page with multi-dimensional graphics showcasing skills, professional journey, and personal interests.
 
